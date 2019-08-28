@@ -22,12 +22,11 @@ class QueryBuilder
         }, array_keys($parameters));
 
         $sql = sprintf(
-            "insert into %s, (%s) values (%s)",
+            "insert into %s (%s) values (%s)",
             $table,
             implode(', ', array_keys($parameters)),
             implode(', ', $columnPlaceholders)
         );
-
         try {
             var_dump($sql);
             $statement = $this->pdo->prepare($sql);
