@@ -8,9 +8,7 @@
 </head>
 <body>
   <?php require 'partials/nav.php'?>
-  <form method="POST" action="/names">
-    <input name="name"/>
-    <button type="submit">Submit</button>
-  </form>
+
+  About
 </body>
 </html>

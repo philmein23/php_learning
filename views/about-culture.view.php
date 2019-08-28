@@ -7,10 +7,8 @@
   <title>Document</title>
 </head>
 <body>
-  <?php require 'partials/nav.php'?>
-  <form method="POST" action="/names">
-    <input name="name"/>
-    <button type="submit">Submit</button>
-  </form>
+    <?php require 'partials/nav.php'?>
+
+    About Culture <?php echo $name ?>
 </body>
 </html>
